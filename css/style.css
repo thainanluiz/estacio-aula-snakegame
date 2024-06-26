@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  background-color: #191919;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+canvas {
+  background-color: #111;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.score--value {
+  font-weight: 700;
+  font-size: 4.5rem;
+  display: block;
+  margin-top: -10px;
+}
+
+.init-menu-screen {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.menu-screen {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.game-over {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.final-score {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.btn {
+  border: none !important;
+  border-radius: 100px !important;
+  padding: 10px 15px 10px 12px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  margin-top: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  cursor: pointer !important;
+  background-color: white !important;
+}
+
+.settings-screen {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.settings-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.settings-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.settings-option--title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.settings-option--value {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-difficulty,
+.btn-speed,
+.btn-color,
+.btn-accelerate,
+.btn-animation,
+.btn-god-mode {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-difficulty:hover,
+.btn-speed:hover,
+.btn-color:hover,
+.btn-accelerate:hover,
+.btn-god-mode:hover,
+.btn-animation:hover,
+.btn-back:hover {
+  background-color: white;
+  color: #333;
+}
+
+.btn-back {
+  border: none;
+  border-radius: 100px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  background-color: white;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.btn-selected {
+  background-color: white;
+  color: #333;
+}
+
+.custom-food-color-input,
+.custom-snake-head-color-input,
+.custom-snake-initial-body-color-input,
+.custom-snake-final-body-color-input {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  margin-top: 10px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  width: calc(100% - 40px);
+}
+
+.custom-food-color-input::placeholder,
+.custom-snake-head-color-input::placeholder,
+.custom-snake-initial-body-color-input::placeholder,
+.custom-snake-final-body-color-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-food-color-input:focus,
+.custom-snake-head-color-input:focus,
+.custom-snake-initial-body-color-input:focus,
+.custom-snake-final-body-color-input:focus {
+  outline: none;
+  background-color: white;
+  color: #333;
+}
+
+.custom-food-color-input:focus::placeholder,
+.custom-snake-head-color-input:focus::placeholder,
+.custom-snake-initial-body-color-input:focus::placeholder,
+.custom-snake-final-body-color-input:focus::placeholder {
+  color: #333;
+}

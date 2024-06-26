@@ -1,0 +1,19 @@
+.grid-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));
+  gap: 5px;
+  z-index: -1;
+  opacity: 0.15;
+}
+
+.grid-item {
+  width: 20px;
+  height: 20px;
+  background-color: #125300;
+}
